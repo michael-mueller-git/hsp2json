@@ -5,30 +5,14 @@ to allow the user to view and edit the content of the file in plain text
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-   git clone https://github.com/Conkuist/hsp2json.git
-   cd hsp2json
-```
-
-2. Install dependencies
-
-```bash
-npm install
-```
-
 ## Usage
 
 ```bash
-node convert.js <option> <input file path> <output file path>
+nix run github:michael-mueller-git/hsp2json -- <option> <input file path> <output file path>
 ```
 
 ### Parameters:
@@ -48,13 +32,13 @@ node convert.js <option> <input file path> <output file path>
 #### convert from hsp to json
 
 ```bash
-node convert.js hsp2json ./input/input.hsp ./output/output.json
+nix run github:michael-mueller-git/hsp2json -- hsp2json ./input/input.hsp ./output/output.json
 ```
 
 #### convert from json to hsp
 
 ```bash
-node convert.js json2hsp ./input/input.json ./output/output.hsp
+nix run github:michael-mueller-git/hsp2json -- json2hsp ./input/input.json ./output/output.hsp
 ```
 
 ## License
